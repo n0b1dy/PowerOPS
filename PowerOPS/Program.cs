@@ -47,7 +47,7 @@ namespace PowerOPS
 
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("\n[+] PowerSploit\n"); Console.ResetColor();
-            Console.Write(" Get-KeyStrokes     Invoke-DllInjection        Invoke-Mimikatz     Invoke-NinjaCopy\n");
+            Console.Write(" Get-KeyStrokes     Invoke-DllInjection        Invoke-Mimikatz [removed]    Invoke-NinjaCopy\n");
             Console.Write(" Invoke-Shellcode   Invoke-TokenManipulation   Invoke-WmiCommand   Invoke-ReflectivePEInjection\n");
             Console.Write(" PowerView          PowerUp\n");
 
@@ -183,7 +183,7 @@ namespace PowerOPS
                             Pipeline pipeline = runspace.CreatePipeline();
                             pipeline.Commands.AddScript(PowerOPS.GetKeyStrokes());
                             pipeline.Commands.AddScript(PowerOPS.InvokeDLLInjection());
-                            pipeline.Commands.AddScript(PowerOPS.InvokeMimikatz());
+                          //  pipeline.Commands.AddScript(PowerOPS.InvokeMimikatz());
                             pipeline.Commands.AddScript(PowerOPS.InvokeNinjaCopy());
                             pipeline.Commands.AddScript(PowerOPS.InvokeReflectivePEInjection());
                             pipeline.Commands.AddScript(PowerOPS.InvokeShellcode());
