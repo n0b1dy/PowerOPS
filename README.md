@@ -45,6 +45,9 @@ Powershell functions within the Runspace are loaded in memory from Base64 Encode
 
 To compile PowerOPS you need to import this project within Microsoft Visual Studio or if you don't have access to a Visual Studio installation, you can compile it as follows:
 
+C:\Windows\Microsoft.NET\Framework64\v4.0.30319>csc.exe /unsafe /reference:"C:\Users\Mallory\Documents\GitHub\PowerOPS\PowerOPS\System.Management.Automation.dll
+" /reference:System.IO.Compression.dll /out:C:\Users\Mallory\Documents\GitHub\PowerOPS\PowerOPS_x64.exe /platform:x64 "C:\Users\Mallory\Documents\GitHub\PowerOPS\PowerOPS\*.cs"
+
 To Compile as x86 binary:
 
 ```

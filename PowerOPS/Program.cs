@@ -39,7 +39,7 @@ namespace PowerOPS
 
         public static void DisplayModules()
         {
-            Console.ForegroundColor = ConsoleColor.Green; if (!isDomainJoined()) Console.WriteLine("\n[-] This computer is not part of a Domain! Some functions will not work!"); Console.ResetColor();
+            Console.ForegroundColor = ConsoleColor.Red; if (!isDomainJoined()) Console.WriteLine("\n[-] This computer is not part of a Domain! Some functions will not work!"); Console.ResetColor();
 
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("\n[+] Nishang\n"); Console.ResetColor();
@@ -150,7 +150,9 @@ namespace PowerOPS
 
             do
             {
-                Console.Write("PS > ");
+                Console.ForegroundColor = ConsoleColor.Cyan;
+				Console.Write("PS > ");
+				Console.ResetColor();
                 command = Console.ReadLine();
 
                 switch (command)
