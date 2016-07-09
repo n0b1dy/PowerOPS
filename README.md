@@ -52,7 +52,7 @@ cd C:\Windows\Microsoft.NET\Framework64\v4.0.30319 (Or newer .NET version folder
 
 csc.exe /unsafe /reference:"C:\path\to\System.Management.Automation.dll" /reference:System.IO.Compression.dll /out:C:\users\username\PowerOPS_x86.exe /platform:x86 "C:\path\to\PowerOPS\PowerOPS\*.cs"
 ```
-
+""
 To Compile as x64 binary:
 
 ```
